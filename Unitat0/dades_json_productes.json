@@ -1,0 +1,23 @@
+     { "productes" : [
+      {
+      "codi_barres" :  "8410000000016",
+      "categoria" : "Pantalles2",
+      "descri" : "Monitor Curvo de 24'' (Full HD, 4 ms, 60 Hz, FreeSync, Flicker-Free, LED, VA, 16:9, 3000:1, 1800R, 250 cd/m², HDMI, Base Redonda) Negro",
+      "foto" : "https://images-eu.ssl-images-amazon.com/images/I/71s5PDpocAL._AC_UL160_SR160,160_.jpg",
+      "nom_producte" : "Monitor Curv 24 ",
+      "preu" : 99,
+      "stock" : 25
+    },
+    {
+      "categoria" : "Periferics2",
+      "codi_barres" : "8410000000023",
+      "descri" : "TedGem Teclado con Cable, USB Teclado, Laptop Teclado Español, Teclado de PC USB, Teclado de Tamaño Completo 12 Botones Multimedia, para Windows XP/7/8/10/Vista",
+      "foto" : "https://m.media-amazon.com/images/I/61vxpIaSpfL._AC_UY218_.jpg",
+      "nom_producte" : "Teclado con Cable",
+      "preu" : 14,
+      "productor" : "ProfeFP",
+      "stock" : 30
+    }
+  ]
+   }
+  

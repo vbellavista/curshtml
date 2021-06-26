@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<productes>
+<producte codi_barres="8410000000016">
+<productor>ProfeFP </productor>
+<categoria> Pantalles</categoria>
+<nom_producte>Monitor Curv 24</nom_producte>
+<descri>Monitor Curv de 24'' (Full HD, 4 ms, 60 Hz, FreeSync, Flicker-Free, LED, VA, 16:9, 3000:1, 1800R, 250 cd/m², HDMI, Base Rodona) Negre</descri>
+<preu>99</preu>
+<stock>25</stock>
+<foto>https://images-eu.ssl-images-amazon.com/images/I/71s5PDpocAL._AC_UL160_SR160,160_.jpg</foto>
+</producte>
+<producte codi_barres="8410000000023">
+<productor>ProfeFP </productor>
+<categoria>Periferics</categoria>
+<nom_producte>Teclat amb cable</nom_producte>
+<descri>TedGem Teclat amb cable, USB Teclat, Laptop Teclat en castellà, Teclat de PC USB, Teclat de Tmida complerta 12 Botons Multimèdia, per Windows XP/7/8/10/Vista</descri>
+<preu>14</preu>
+<stock>30</stock>
+<foto>https://m.media-amazon.com/images/I/61vxpIaSpfL._AC_UY218_.jpg</foto>
+</producte>
+</productes>

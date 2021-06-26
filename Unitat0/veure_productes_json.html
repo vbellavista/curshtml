@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Fitxa Productes</title>
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
+
+<style type="text/css">
+#llista {
+      width: 600px; 
+      alignment-baseline: left; 
+      margin: 10px;
+}
+#fitxa {
+     width: 600px;
+     height: 400px;
+     margin : auto;
+    align-content: left; 
+}
+
+#esquerra {
+     float: left; 
+     width: 250px; 
+     height: 100%; 
+}
+
+#dreta {
+  float: right;
+  width:  350px;
+  height: 100%; 
+  text-align: left;
+ 
+}
+
+.foto {
+    width: : 140px; 
+    height: : 100px;
+    transition: transform 0.5s; 
+}
+
+.foto:hover{
+        transform: scale(1.5);
+      }
+
+.barres {
+    width: 150px; 
+}
+
+.titol {
+   text-align: center; 
+   font-weight: bold; 
+   background-color:  #cccccc; 
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="llista" >
+
+</div>
+
+</body>
+
+<script type="text/javascript" >
+var producte ="" ; 
+
+jQuery(document).ready(function(){
+
+ var url = "https://productes-2649c-default-rtdb.firebaseio.com/productes.json"; 
+$.getJSON(url, function(res) {
+  //alert(res.data[0].resultats[0].Hora); 
+    var text = ""; 
+ $.each(res, function(i, item) {
+   if (item.categoria != null ) 
+  { 
+   var v_codi_barres = item.codi_barres ; 
+   alert(v_codi_barres); 
+   var v_productor =  item.productor; 
+  var v_categoria =  item.categoria ; 
+  var v_nom_producte =  item.nom_producte; 
+  var v_descri = item.descri; 
+  var v_preu =  item.preu ; 
+  var v_stock =  item.stock ; 
+  var v_foto =  item.foto ; 
+
+
+  var url_codi_barres = "https://barcode.tec-it.com/barcode.ashx?data=" + v_codi_barres + "&code=EAN13&translate-esc=on"; 
+producte += '<div class="titol"  >' + v_nom_producte + ' </div>'; 
+producte += '<div id="fitxa" >'; 
+producte += '<div id="esquerra" >' ;
+producte += '<img class="foto img-fluid" src="' +  v_foto + '" /><br />' ;
+producte += '<img class="barres" src="' +  url_codi_barres + '" />' ;
+producte += '</div>'; 
+producte += '<div id ="dreta" >'; 
+producte += '<span class="etiqueta" > Categoria: </span><span class="dada" >' + v_categoria + '<br ></span>';
+producte += '<span class="etiqueta" > Productor: </span><span class="dada" >' + v_productor + '<br ></span>';
+producte += '<span class="etiqueta" > Preu </span><span class="dada" >' + v_preu + '<br ></span>';
+producte += '<span class="etiqueta" > Stock:  </span><span class="dada" >' + v_stock + '<br ></span>';
+producte += '<span class="etiqueta" > <i>Descripció del producte:</i> <br /> </span><span class="dada" >'  + v_descri + '<br ></span>';
+
+producte += ' <span class="glyphicon .glyphicon-shopping-cart" > </span>' ; 
+
+producte += '</div>' ; 
+producte += '</div>' ; 
+
+}
+}) ; 
+
+$("#llista").html(producte);
+
+  });
+
+  });
+
+
+</script>
+
+
+
+</html>
